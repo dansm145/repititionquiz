@@ -1,0 +1,23 @@
+
+[
+  {
+    "question": "What is the primary purpose of an operating system?",
+    "options": [
+      "To play games",
+      "To manage hardware and software resources",
+      "To browse the internet",
+      "To edit photos"
+    ],
+    "correctAnswer": 1  
+  },
+  {
+    "question": "Which of the following is NOT an operating system?",
+    "options": [
+      "Windows",
+      "Linux",
+      "Microsoft Office",
+      "macOS"
+    ],
+    "correctAnswer": 2
+  }
+]

@@ -1,5 +1,6 @@
 
 [
+  
   {
     "question": "What is the primary purpose of an operating system?",
     "options": [
@@ -9,6 +10,26 @@
       "To edit photos"
     ],
     "correctAnswer": 1  
+  },
+    {
+    "question": "What is the primary purpose of an operating system?",
+    "options": [
+      "To play games",
+      "To manage hardware and software resources",
+      "To browse the internet",
+      "To edit photos"
+    ],
+    "correctAnswer": 1  
+  },
+    {
+    "question": "What is the primary purpose of domain local groups?",
+    "options": [
+      "It's used to assign permissions to shared resources",
+      "It's used to organize users and computers within a domain",
+      "It's used to manage user authentication",
+      "It's used to edit files"
+    ],
+    "correctAnswer": 0 
   },
   {
     "question": "Which of the following is NOT an operating system?",
@@ -20,4 +41,11 @@
     ],
     "correctAnswer": 2
   }
+
+
+
+
+
+
+
 ]

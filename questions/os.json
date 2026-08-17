@@ -12,14 +12,14 @@
     "correctAnswer": 1  
   },
     {
-    "question": "What is the primary purpose of an operating system?",
+    "question": "What is the primary purpose of a remote desktop?",
     "options": [
-      "To play games",
-      "To manage hardware and software resources",
-      "To browse the internet",
-      "To edit photos"
+      "Ro listen to music",
+      "To remote music listening",
+      "To Accees a computer from anothe location",
+      "To clean you harddrive"
     ],
-    "correctAnswer": 1  
+    "correctAnswer": 2  
   },
     {
     "question": "What is the primary purpose of domain local groups?",
@@ -31,6 +31,36 @@
     ],
     "correctAnswer": 0 
   },
+  {
+    "question": "What powershell command print the all IP Adress information?",
+    "options": [
+      "Get-Content",
+      "Get-History",
+      "IPConfig /all",
+      "Set-NetIPAddress"
+    ],
+    "correctAnswer": 2 
+  },
+  {
+    "question": "What is the responability of a DTCP-server?",
+    "options": [
+      "A DTCP server compressed video files to reduce bandwith usage.",
+      "A DTCP server hosts and servers static websites over the internet.",
+      "A DTCP server monitores notworks trafic to detect and prevent cyberattacks",
+      "A DTCP server securely delivers encrypted digital contentS to authorized devices while enforcing copy protection and access control."
+    ],
+    "correctAnswer": 3 
+  },
+  {
+    "question": "What is the DNS used for?",
+    "options": [
+      "DNS encrypts data transmitted brtween a users device and the website.",
+      "DNS translate domain names into IP adresses",
+      "DNS Stores nd manages website content, like HTML files and images.",
+      "DNS DNS block malicious websites and enhances evurity"
+    ],
+    "correctAnswer": 1 
+  }, 
   {
     "question": "Which of the following is NOT an operating system?",
     "options": [

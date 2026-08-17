@@ -1,22 +1,22 @@
 [
   {
-    "question": "What is the primary purpose of an operating system?",
+    "question": "What process uses IP addresses to forward data packets through a network or subnetwork??",
     "options": [
-      "To play games",
-      "To manage hardware and software resources",
-      "To browse the internet",
-      "To edit photos"
+      "Smoothering",
+      "Pasting",
+      "Routing",
+      "Network path"
     ],
-    "correctAnswer": 1  
+    "correctAnswer": 2  
   },
   {
-    "question": "Which of the following is NOT an operating system?",
+    "question": "What is used to quantify route trustworthiness?",
     "options": [
-      "Windows",
-      "Linux",
-      "Microsoft Office",
-      "macOS"
+      "Administrative distance(AD)",
+      "AP adress lenght",
+      "networks bandwidth",
+      "Number of connected devices"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 0
   }
 ]

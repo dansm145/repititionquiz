@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', () => {
     const subjectButtons = document.querySelectorAll('.subject-btn');
     const questionContainer = document.getElementById('question-container');
@@ -13,6 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Subject buttons from your HTML
     subjectButtons.forEach(button => {
         button.addEventListener('click', () => {
+            subjectButtons.forEach(b => b.classList.remove('active'));
+            button.classList.add('active');
+
             const subject = button.dataset.subject;
             loadQuestions(subject);
         });
@@ -266,4 +268,3 @@ document.addEventListener('DOMContentLoaded', () => {
         showRandomQuestion();
     }
 });
-

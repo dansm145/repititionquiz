@@ -1,87 +1,403 @@
+/* ============================================
+   Tokens
+   ============================================ */
+:root {
+  --wood:            #3A2E22;
+  --wood-dark:        #2B2119;
+  --card-stock:       #EDE3C8;
+  --card-stock-edge:  #DCCDA0;
+  --ink-navy:         #1B2A4A;
+  --ink-navy-soft:    #2F4270;
+  --stamp-red:        #A8322D;
+  --stamp-red-soft:   #C74A3F;
+  --graphite:         #55503F;
 
-.question {
-  margin-bottom: 1.5rem;
-  padding: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  background: #f9f9f9;
+  --font-display: 'Special Elite', 'Courier New', monospace;
+  --font-body:    'Source Serif 4', Georgia, serif;
+  --font-mono:    'Space Mono', 'Courier New', monospace;
 }
 
-.question h3 {
-  margin-top: 0;
-  color: #2c3e50;
-}
+* { box-sizing: border-box; }
 
-.options {
-  margin: 0.5rem 0;
-}
-
-.option {
-  margin: 0.3rem 0;
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 2.5rem 1.25rem 4rem;
+  background:
+    radial-gradient(ellipse at top, rgba(255,255,255,0.05), transparent 60%),
+    repeating-linear-gradient(90deg, var(--wood) 0px, var(--wood) 2px, var(--wood-dark) 2px, var(--wood-dark) 90px);
+  color: var(--ink-navy);
+  font-family: var(--font-body);
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
 
-.option input[type="radio"] {
-  margin-right: 0.5rem;
+/* ============================================
+   Drawer face / overall frame
+   ============================================ */
+.drawer-face {
+  width: 100%;
+  max-width: 720px;
+  animation: rise 0.5s ease both;
 }
 
-.submit-btn {
-  background: #2ecc71;
-  color: #fff;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-top: 0.5rem;
+@keyframes rise {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
-.submit-btn:hover {
-  background: #27ae60;
+/* ============================================
+   Header: brass label plate
+   ============================================ */
+.plate {
+  background: var(--ink-navy);
+  color: var(--card-stock);
+  text-align: center;
+  padding: 1.75rem 1.5rem 1.5rem;
+  border-radius: 3px;
+  border: 1px solid #0f1830;
+  box-shadow:
+    inset 0 0 0 1px rgba(237, 227, 200, 0.15),
+    0 6px 0 var(--wood-dark),
+    0 8px 14px rgba(0,0,0,0.4);
 }
 
-.feedback {
-  margin-top: 0.5rem;
-  font-weight: bold;
+.plate-eyebrow {
+  margin: 0 0 0.4rem;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--stamp-red-soft);
 }
 
-.correct {
-  color: #2ecc71;
+.plate h1 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 5vw, 2.6rem);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
-.incorrect {
-  color: #e74c3c;
+.plate-sub {
+  margin: 0.5rem 0 0;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: rgba(237, 227, 200, 0.75);
 }
 
-.subjects {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    gap: 1rem;
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
+/* ============================================
+   Tabs: catalog drawer tabs
+   ============================================ */
+.tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin: 1.5rem 0 0;
+  padding: 0 0.5rem;
 }
 
 .subject-btn {
   flex: 1;
   min-width: 0;
-  padding: 1rem;
-  border: none;
-  border-radius: 8px;
   cursor: pointer;
-  font-size: 1rem;
-  font-weight: bold;
-  
+  font-family: var(--font-body);
+  font-weight: 600;
+  background: var(--card-stock-edge);
+  color: var(--graphite);
+  border: 1px solid rgba(27, 42, 74, 0.25);
+  border-bottom: none;
+  border-radius: 6px 6px 0 0;
+  padding: 0.75rem 0.5rem 0.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  transform: translateY(6px);
+  transition: transform 0.18s ease, background 0.18s ease, color 0.18s ease;
 }
 
-@media (max-width: 600px) {
-  .Subjects {
-    gap: 0.5rem;
-  }
+.subject-btn:hover {
+  transform: translateY(2px);
+  background: #E5D8AF;
+}
 
-  .subject-btn {
-    padding: 0.8rem 0.4rem;
-    font-size: 0.85rem;
+.subject-btn:focus-visible {
+  outline: 2px solid var(--stamp-red);
+  outline-offset: 2px;
+}
+
+.subject-btn.active {
+  background: var(--card-stock);
+  color: var(--ink-navy);
+  transform: translateY(0);
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.08);
+}
+
+.tab-label {
+  font-size: 0.85rem;
+  line-height: 1.15;
+  text-align: center;
+}
+
+.tab-code {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.05em;
+  color: var(--stamp-red-soft);
+}
+
+/* ============================================
+   Drawer body / card stock surface
+   ============================================ */
+.drawer-body {
+  background: var(--card-stock);
+  border-radius: 0 0 6px 6px;
+  padding: 1.75rem 1.5rem 2rem;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.35);
+  position: relative;
+  min-height: 220px;
+}
+
+.placeholder {
+  margin: 2rem 0;
+  text-align: center;
+  font-style: italic;
+  color: var(--graphite);
+}
+
+/* Score, styled as a due-date stamp box */
+.score {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--ink-navy);
+  background: rgba(27, 42, 74, 0.06);
+  border: 1px dashed rgba(27, 42, 74, 0.35);
+  border-radius: 4px;
+  padding: 0.35rem 0.65rem;
+  margin-bottom: 1rem;
+}
+
+.score::before {
+  content: "TALLY";
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  color: var(--stamp-red-soft);
+}
+
+/* ============================================
+   Question card: torn-edge index card
+   ============================================ */
+.question {
+  position: relative;
+  background:
+    repeating-linear-gradient(
+      transparent, transparent 1.9rem,
+      rgba(27,42,74,0.09) 1.9rem, rgba(27,42,74,0.09) calc(1.9rem + 1px)
+    ),
+    #F5EED9;
+  padding: 2.25rem 1.5rem 1.5rem;
+  border: 1px solid rgba(27,42,74,0.15);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.18);
+  transform: rotate(-0.4deg);
+  clip-path: polygon(
+    0% 5%, 5% 0%, 10% 5%, 15% 0%, 20% 5%, 25% 0%, 30% 5%, 35% 0%,
+    40% 5%, 45% 0%, 50% 5%, 55% 0%, 60% 5%, 65% 0%, 70% 5%, 75% 0%,
+    80% 5%, 85% 0%, 90% 5%, 95% 0%, 100% 5%,
+    100% 100%, 0% 100%
+  );
+  overflow: hidden;
+}
+
+.question h3 {
+  margin: 0 0 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--stamp-red-soft);
+}
+
+.question > p {
+  margin: 0 0 1.25rem;
+  font-size: 1.15rem;
+  line-height: 1.5;
+}
+
+.options {
+  margin: 0.5rem 0 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.option input[type="radio"] {
+  appearance: none;
+  width: 1.05rem;
+  height: 1.05rem;
+  border: 2px solid var(--ink-navy);
+  border-radius: 50%;
+  margin: 0;
+  flex-shrink: 0;
+  cursor: pointer;
+  position: relative;
+}
+
+.option input[type="radio"]:checked::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  border-radius: 50%;
+  background: var(--stamp-red);
+}
+
+.option input[type="radio"]:disabled {
+  cursor: default;
+  opacity: 0.7;
+}
+
+.option label {
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.submit-btn, .next-btn, #restart-btn {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  background: transparent;
+  color: var(--ink-navy);
+  border: 2px solid var(--ink-navy);
+  border-radius: 3px;
+  padding: 0.55rem 1.1rem;
+  cursor: pointer;
+  transition: transform 0.12s ease, background 0.12s ease, color 0.12s ease;
+}
+
+.submit-btn:hover, .next-btn:hover, #restart-btn:hover {
+  background: var(--ink-navy);
+  color: var(--card-stock);
+}
+
+.submit-btn:active, .next-btn:active, #restart-btn:active {
+  transform: scale(0.95) rotate(-1deg);
+}
+
+.submit-btn:disabled {
+  opacity: 0.35;
+  cursor: default;
+  border-color: var(--graphite);
+  color: var(--graphite);
+}
+
+.next-btn {
+  margin-top: 1rem;
+  border-color: var(--stamp-red);
+  color: var(--stamp-red);
+}
+
+.next-btn:hover {
+  background: var(--stamp-red);
+  color: var(--card-stock);
+}
+
+/* Feedback rendered as a rubber stamp */
+.feedback {
+  margin-top: 1rem;
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 1.1rem;
+  display: inline-block;
+  padding: 0.4rem 0.9rem;
+  border: 3px solid currentColor;
+  border-radius: 4px;
+  transform: rotate(-6deg) scale(1);
+  animation: stamp-down 0.28s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+@keyframes stamp-down {
+  from { opacity: 0; transform: rotate(-6deg) scale(1.8); }
+  to   { opacity: 1; transform: rotate(-6deg) scale(1); }
+}
+
+.feedback.correct {
+  color: var(--ink-navy);
+}
+
+.feedback.incorrect {
+  color: var(--stamp-red);
+}
+
+/* ============================================
+   Final score card
+   ============================================ */
+.final-score {
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+.final-score h2 {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink-navy);
+}
+
+.final-score p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.final-score strong {
+  color: var(--stamp-red);
+  font-size: 1.3em;
+}
+
+/* ============================================
+   Footer
+   ============================================ */
+.ledger {
+  text-align: center;
+  margin-top: 1.25rem;
+}
+
+.ledger p {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  color: rgba(237, 227, 200, 0.55);
+}
+
+/* ============================================
+   Responsive
+   ============================================ */
+@media (max-width: 600px) {
+  body { padding: 1.5rem 0.75rem 3rem; }
+
+  .tabs { gap: 0.35rem; }
+
+  .tab-label { font-size: 0.75rem; }
+  .tab-code { display: none; }
+
+  .drawer-body { padding: 1.25rem 1rem 1.5rem; }
+
+  .question { padding: 2rem 1.1rem 1.25rem; }
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .drawer-face, .feedback, .subject-btn, .submit-btn, .next-btn, #restart-btn {
+    animation: none !important;
+    transition: none !important;
   }
 }

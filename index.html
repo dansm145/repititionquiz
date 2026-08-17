@@ -4,27 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Question Bank</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <header>
-        <h1>Question Bank</h1>
-        <nav class="Subjects">
-            <button class="subject-btn" data-subject="os">Operating Systems</button>
-            <button class="subject-btn" data-subject="network">Networking</button>
-            <button class="subject-btn" data-subject="programming">Programming</button>
+
+    <div class="drawer-face">
+
+        <header class="plate">
+            <p class="plate-eyebrow">Archive No. 105&ndash;C</p>
+            <h1>Question Bank</h1>
+            <p class="plate-sub">a card catalog of exam questions</p>
+        </header>
+
+        <nav class="tabs" aria-label="Select a subject">
+            <button class="subject-btn" data-subject="os" data-code="005.4">
+                <span class="tab-label">Operating Systems</span>
+                <span class="tab-code">005.1</span>
+            </button>
+            <button class="subject-btn" data-subject="network" data-code="004.6">
+                <span class="tab-label">Networking</span>
+                <span class="tab-code">004.2</span>
+            </button>
+            <button class="subject-btn" data-subject="programming" data-code="005.1">
+                <span class="tab-label">Programming</span>
+                <span class="tab-code">005.3</span>
+            </button>
         </nav>
-    </header>
 
-    <main>
-        <div id="question-container">
-            <p>Select a subject to view questions.</p>
-        </div>
-    </main>
+        <main class="drawer-body">
+            <div id="question-container">
+                <p class="placeholder">Pull a tab above to open a drawer of questions.</p>
+            </div>
+        </main>
 
-    <footer>
-        <p>Powered by GitHub Pages</p>
-    </footer>
+        <footer class="ledger">
+            <p>Catalogued &amp; served via GitHub Pages</p>
+        </footer>
+
+    </div>
 
     <script src="./scripts.js"></script>
 </body>

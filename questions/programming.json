@@ -1,22 +1,22 @@
 [
   {
-    "question": "What is the primary purpose of an operating system?",
+    "question": "What is the most common function for writing a given text?",
     "options": [
-      "To play games",
-      "To manage hardware and software resources",
-      "To browse the internet",
-      "To edit photos"
+      "Print()",
+      "Write()",
+      "Type()",
+      "Edit()"
     ],
-    "correctAnswer": 1  
+    "correctAnswer": 0  
   },
   {
-    "question": "Which of the following is NOT an operating system?",
+    "question": "What us ot called when a given function calls it self?",
     "options": [
-      "Windows",
-      "Linux",
-      "Microsoft Office",
-      "macOS"
+      "Cloistered",
+      "Recussing",
+      "Isolate",
+      "Recusive"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 3
   }
 ]

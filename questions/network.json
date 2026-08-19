@@ -1,21 +1,491 @@
 [
   {
-    "question": "What process uses IP addresses to forward data packets through a network or subnetwork??",
+    "question": "Which of the following is a function of an operating system?",
     "options": [
-      "Smoothering",
-      "Pasting",
-      "Routing",
-      "Network path"
+      "Compiling source code",
+      "Managing memory allocation",
+      "Designing user interfaces",
+      "Creating databases"
     ],
-    "correctAnswer": 2  
+    "correctAnswer": 1
   },
   {
-    "question": "What is used to quantify route trustworthiness?",
+    "question": "What is the primary role of a kernel in an operating system?",
     "options": [
-      "Administrative distance(AD)",
-      "AP adress lenght",
-      "networks bandwidth",
-      "Number of connected devices"
+      "To provide a user interface",
+      "To manage system resources and hardware communication",
+      "To store user files",
+      "To run applications directly"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Which file system is commonly used in Windows operating systems?",
+    "options": [
+      "ext4",
+      "NTFS",
+      "APFS",
+      "ZFS"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "What does the term 'GUI' stand for in computing?",
+    "options": [
+      "Graphical User Interface",
+      "General User Input",
+      "Global Unified Index",
+      "Graphical Utility Integration"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Which of the following is an example of an open-source operating system?",
+    "options": [
+      "Windows 10",
+      "macOS",
+      "Linux",
+      "iOS"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "What is the purpose of a device driver in an operating system?",
+    "options": [
+      "To encrypt user data",
+      "To allow the OS to communicate with hardware devices",
+      "To manage network connections",
+      "To compress files"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Which command is used to list files and directories in a Linux terminal?",
+    "options": [
+      "dir",
+      "ls",
+      "list",
+      "show"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "What is the primary function of RAM in a computer?",
+    "options": [
+      "To store data permanently",
+      "To provide temporary storage for running applications",
+      "To manage network traffic",
+      "To cool down the CPU"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Which of the following is NOT a type of computer memory?",
+    "options": [
+      "RAM",
+      "ROM",
+      "CPU",
+      "Cache"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "What does the term 'CPU' stand for?",
+    "options": [
+      "Central Processing Unit",
+      "Computer Personal Unit",
+      "Control Processing Unit",
+      "Central Power Unit"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Which operating system is developed by Apple Inc.?",
+    "options": [
+      "Windows",
+      "Linux",
+      "macOS",
+      "Android"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "What is the purpose of a firewall in a computer network?",
+    "options": [
+      "To speed up internet connections",
+      "To block unauthorized access and protect against threats",
+      "To store user passwords",
+      "To manage file permissions"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Which protocol is used to send emails over the internet?",
+    "options": [
+      "HTTP",
+      "FTP",
+      "SMTP",
+      "TCP"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "What does the term 'URL' stand for?",
+    "options": [
+      "Uniform Resource Locator",
+      "Universal Reading Language",
+      "United Remote Link",
+      "Uniform Resource Link"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Which of the following is a type of network topology?",
+    "options": [
+      "Round",
+      "Star",
+      "Circle",
+      "Square"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "What is the purpose of a router in a network?",
+    "options": [
+      "To store data",
+      "To forward data packets between networks",
+      "To encrypt files",
+      "To manage user accounts"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Which of the following is a valid IPv4 address?",
+    "options": [
+      "192.168.1.256",
+      "192.168.1.1",
+      "256.168.1.1",
+      "192.168.1"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "What does the term 'LAN' stand for?",
+    "options": [
+      "Local Area Network",
+      "Long Access Node",
+      "Link Area Network",
+      "Local Access Node"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Which protocol is used to transfer files over the internet?",
+    "options": [
+      "HTTP",
+      "FTP",
+      "SMTP",
+      "DNS"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "What is the primary function of a switch in a network?",
+    "options": [
+      "To connect multiple networks",
+      "To forward data to the correct device within a network",
+      "To store data packets",
+      "To encrypt data"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Which of the following is a type of malware?",
+    "options": [
+      "Cookie",
+      "Virus",
+      "Cache",
+      "Pixel"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "What does the term 'VPN' stand for?",
+    "options": [
+      "Virtual Private Network",
+      "Very Personal Node",
+      "Virtual Public Network",
+      "Visual Private Node"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Which of the following is a type of encryption?",
+    "options": [
+      "AES",
+      "HTTP",
+      "FTP",
+      "DNS"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "What is the purpose of a proxy server?",
+    "options": [
+      "To store user files",
+      "To act as an intermediary between a user and the internet",
+      "To manage hardware resources",
+      "To compile code"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Which of the following is a programming language?",
+    "options": [
+      "HTML",
+      "CSS",
+      "Python",
+      "XML"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "What does the term 'HTML' stand for?",
+    "options": [
+      "Hyper Text Markup Language",
+      "High Transfer Module Language",
+      "Hyper Transfer Markup Language",
+      "High Text Module Language"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Which of the following is a database management system?",
+    "options": [
+      "Apache",
+      "MySQL",
+      "Nginx",
+      "Node.js"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "What is the primary function of a compiler?",
+    "options": [
+      "To execute machine code",
+      "To translate source code into machine code",
+      "To debug programs",
+      "To manage memory"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Which of the following is an example of a web browser?",
+    "options": [
+      "Notepad",
+      "Chrome",
+      "Excel",
+      "PowerPoint"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "What does the term 'CSS' stand for?",
+    "options": [
+      "Computer Style Sheet",
+      "Cascading Style Sheets",
+      "Creative Style System",
+      "Computer Style System"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Which of the following is a type of software license?",
+    "options": [
+      "HTTP",
+      "GPL",
+      "FTP",
+      "SMTP"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "What is the purpose of an antivirus program?",
+    "options": [
+      "To speed up the computer",
+      "To detect and remove malware",
+      "To manage network connections",
+      "To store user files"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Which of the following is a cloud storage service?",
+    "options": [
+      "Dropbox",
+      "Notepad",
+      "Excel",
+      "PowerPoint"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "What does the term 'API' stand for?",
+    "options": [
+      "Application Programming Interface",
+      "Advanced Programming Interface",
+      "Application Protocol Interface",
+      "Advanced Protocol Interface"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Which of the following is a type of computer port?",
+    "options": [
+      "HTTP",
+      "USB",
+      "FTP",
+      "SMTP"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "What is the primary function of a motherboard in a computer?",
+    "options": [
+      "To store data permanently",
+      "To connect and allow communication between hardware components",
+      "To cool down the CPU",
+      "To manage network traffic"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Which of the following is a type of computer monitor?",
+    "options": [
+      "LCD",
+      "USB",
+      "HTTP",
+      "FTP"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "What does the term 'BIOS' stand for?",
+    "options": [
+      "Basic Input Output System",
+      "Binary Input Output System",
+      "Basic Interface Operating System",
+      "Binary Interface Operating System"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Which of the following is a type of printer?",
+    "options": [
+      "LCD",
+      "Inkjet",
+      "USB",
+      "HTTP"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "What is the purpose of a GPU in a computer?",
+    "options": [
+      "To manage memory allocation",
+      "To render graphics and images",
+      "To store user files",
+      "To manage network connections"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Which of the following is a type of keyboard layout?",
+    "options": [
+      "QWERTY",
+      "USB",
+      "HTTP",
+      "FTP"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "What does the term 'SSD' stand for?",
+    "options": [
+      "Solid State Drive",
+      "Super Speed Drive",
+      "Secure State Drive",
+      "Solid Speed Drive"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Which of the following is a type of operating system for mobile devices?",
+    "options": [
+      "Windows",
+      "Android",
+      "Linux",
+      "macOS"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "What is the purpose of a UPS in a computer setup?",
+    "options": [
+      "To speed up the computer",
+      "To provide backup power during outages",
+      "To manage network connections",
+      "To store user files"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Which of the following is a type of computer mouse?",
+    "options": [
+      "LCD",
+      "Optical",
+      "USB",
+      "HTTP"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "What does the term 'HDD' stand for?",
+    "options": [
+      "Hard Disk Drive",
+      "High Density Drive",
+      "Hard Data Drive",
+      "High Disk Drive"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Which of the following is a type of network cable?",
+    "options": [
+      "USB",
+      "Ethernet",
+      "HTTP",
+      "FTP"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "What is the purpose of a sound card in a computer?",
+    "options": [
+      "To manage memory allocation",
+      "To process and output audio",
+      "To store user files",
+      "To manage network connections"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Which of the following is a type of computer processor manufacturer?",
+    "options": [
+      "Intel",
+      "USB",
+      "HTTP",
+      "FTP"
     ],
     "correctAnswer": 0
   }

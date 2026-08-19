@@ -1,22 +1,362 @@
 [
   {
-    "question": "What is the most common function for writing a given text?",
-    "options": [
-      "Print()",
-      "Write()",
-      "Type()",
-      "Edit()"
-    ],
-    "correctAnswer": 0  
+    "question": "What is the output of `2 + 2` in Python?",
+    "options": ["3", "4", "5", "6"],
+    "correctAnswer": 1
   },
   {
-    "question": "What us ot called when a given function calls it self?",
+    "question": "Which keyword is used to define a function in Python?",
+    "options": ["func", "define", "def", "function"],
+    "correctAnswer": 2
+  },
+  {
+    "question": "What does the `++` operator do in C++?",
+    "options": ["Decrements a value", "Multiplies a value", "Increments a value", "Divides a value"],
+    "correctAnswer": 2
+  },
+  {
+    "question": "Which data structure uses the Last-In-First-Out (LIFO) principle?",
+    "options": ["Queue", "Stack", "Array", "Linked List"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "What is the correct syntax for a `for` loop in Java?",
     "options": [
-      "Cloistered",
-      "Recussing",
-      "Isolate",
-      "Recusive"
+      "for (int i = 0; i < 5; i++)",
+      "for i in range(5):",
+      "for i from 0 to 5",
+      "for (i = 0; i < 5; i++)"
     ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Which of these is NOT a valid variable name in Python?",
+    "options": ["_variable", "variable1", "1variable", "Variable"],
+    "correctAnswer": 2
+  },
+  {
+    "question": "What does the `break` statement do in a loop?",
+    "options": [
+      "Skips the current iteration",
+      "Exits the loop immediately",
+      "Continues to the next iteration",
+      "Pauses the loop temporarily"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Which of these is a mutable data type in Python?",
+    "options": ["int", "str", "list", "tuple"],
+    "correctAnswer": 2
+  },
+  {
+    "question": "What is the output of `5 // 2` in Python?",
+    "options": ["2.5", "2", "3", "2.0"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Which function is used to read input from the user in Python?",
+    "options": ["input()", "read()", "scan()", "get()"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "What is the correct way to comment a single line in Python?",
+    "options": ["// This is a comment", "# This is a comment", "/* This is a comment */", "-- This is a comment"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Which of these is NOT a valid data type in JavaScript?",
+    "options": ["number", "string", "boolean", "float"],
     "correctAnswer": 3
+  },
+  {
+    "question": "What does the `typeof` operator return in JavaScript for `null`?",
+    "options": ["'null'", "'undefined'", "'object'", "'string'"],
+    "correctAnswer": 2
+  },
+  {
+    "question": "Which method is used to add an element to the end of an array in JavaScript?",
+    "options": ["push()", "pop()", "shift()", "unshift()"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "What is the output of `console.log(0 == '0')` in JavaScript?",
+    "options": ["false", "true", "undefined", "null"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Which keyword is used to declare a constant in JavaScript?",
+    "options": ["var", "let", "const", "final"],
+    "correctAnswer": 2
+  },
+  {
+    "question": "What is the correct way to include an external JavaScript file in HTML?",
+    "options": [
+      "<script src='file.js'></script>",
+      "<js src='file.js'></js>",
+      "<include file='file.js'>",
+      "<link src='file.js'>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Which of these is NOT a valid HTTP method?",
+    "options": ["GET", "POST", "FETCH", "PUT"],
+    "correctAnswer": 2
+  },
+  {
+    "question": "What does the `git clone` command do?",
+    "options": [
+      "Creates a new repository",
+      "Copies a repository to your local machine",
+      "Deletes a repository",
+      "Merges branches"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Which command is used to stage changes for commit in Git?",
+    "options": ["git add", "git commit", "git push", "git stage"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "What is the purpose of the `README.md` file in a GitHub repository?",
+    "options": [
+      "To store configuration settings",
+      "To provide documentation about the project",
+      "To list all contributors",
+      "To define the project license"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Which of these is a valid way to declare a variable in C?",
+    "options": [
+      "int x = 5;",
+      "x = 5;",
+      "variable x = 5;",
+      "declare x as int = 5;"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "What is the output of `printf(\"%d\", sizeof(int))` in C on a 64-bit system?",
+    "options": ["2", "4", "8", "Depends on the compiler"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "What does the `malloc` function do in C?",
+    "options": [
+      "Allocates memory dynamically",
+      "Freed allocated memory",
+      "Initializes memory",
+      "Copies memory"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Which of these is NOT a valid access modifier in Java?",
+    "options": ["public", "private", "protected", "hidden"],
+    "correctAnswer": 3
+  },
+  {
+    "question": "What is the correct way to define a class in Java?",
+    "options": [
+      "class MyClass { }",
+      "define MyClass { }",
+      "class: MyClass { }",
+      "MyClass class { }"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Which method is called automatically when an object is created in Java?",
+    "options": ["main()", "constructor()", "init()", "start()"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "What does the `static` keyword do in Java?",
+    "options": [
+      "Makes a variable or method belong to the class rather than an instance",
+      "Makes a variable immutable",
+      "Makes a method run automatically",
+      "Makes a variable private"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Which of these is a valid way to handle exceptions in Java?",
+    "options": [
+      "try-catch-finally",
+      "if-else",
+      "switch-case",
+      "do-while"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "What is the output of `System.out.println(10 / 3)` in Java?",
+    "options": ["3.333...", "3", "4", "Error"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Which of these is NOT a valid data type in C++?",
+    "options": ["int", "float", "boolean", "double"],
+    "correctAnswer": 2
+  },
+  {
+    "question": "What does the `new` operator do in C++?",
+    "options": [
+      "Deletes an object",
+      "Creates a new object on the heap",
+      "Copies an object",
+      "Initializes an object"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Which of these is a valid way to declare a pointer in C++?",
+    "options": [
+      "int* ptr;",
+      "ptr = int*;",
+      "int ptr*;",
+      "int *ptr;"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "What is the correct way to include a header file in C++?",
+    "options": [
+      "#include <header>",
+      "include <header>",
+      "#include header",
+      "import <header>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Which of these is NOT a valid operator in C++?",
+    "options": ["+", "-", "^", "**"],
+    "correctAnswer": 3
+  },
+  {
+    "question": "What does the `virtual` keyword do in C++?",
+    "options": [
+      "Makes a function or method overrides in derived classes",
+      "Makes a variable constant",
+      "Makes a class abstract",
+      "Makes a variable static"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Which of these is a valid way to declare a function in C++?",
+    "options": [
+      "int myFunction() { }",
+      "function myFunction() { }",
+      "def myFunction() { }",
+      "myFunction() { }"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "What is the output of `cout << (5 > 3)` in C++?",
+    "options": ["true", "1", "5", "Error"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Which of these is NOT a valid loop in C++?",
+    "options": ["for", "while", "do-while", "repeat"],
+    "correctAnswer": 3
+  },
+  {
+    "question": "What does the `const` keyword do in C++?",
+    "options": [
+      "Makes a variable immutable",
+      "Makes a variable static",
+      "Makes a variable global",
+      "Makes a variable dynamic"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Which of these is a valid way to declare an array in C++?",
+    "options": [
+      "int arr[5];",
+      "arr = int[5];",
+      "int arr = [5];",
+      "array arr[5];"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "What is the correct way to declare a string in Python?",
+    "options": [
+      "str = 'Hello';",
+      "'Hello'",
+      "string = Hello;",
+      "String('Hello')"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Which method is used to convert a string to an integer in Python?",
+    "options": ["int()", "parseInt()", "toInteger()", "convert()"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "What does the `len()` function do in Python?",
+    "options": [
+      "Returns the length of an object",
+      "Returns the type of an object",
+      "Returns the value of an object",
+      "Returns the memory address of an object"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Which of these is a valid way to declare a dictionary in Python?",
+    "options": [
+      "{'key': 'value'}",
+      "dict(key: value)",
+      "dictionary = {key: value}",
+      "dict = ['key', 'value']"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "What does the `split()` method do in Python?",
+    "options": [
+      "Splits a string into a list",
+      "Joins a list into a string",
+      "Replaces a substring in a string",
+      "Converts a string to uppercase"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Which of these is NOT a valid file mode in Python?",
+    "options": ["'r'", "'w'", "'a'", "'x'"],
+    "correctAnswer": 3
+  },
+  {
+    "question": "What does the `range()` function do in Python?",
+    "options": [
+      "Generates a sequence of numbers",
+      "Returns the range of a list",
+      "Converts a list to a range",
+      "Returns the length of a list"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Which of these is a valid way to declare a set in Python?",
+    "options": [
+      "{1, 2, 3}",
+      "set(1, 2, 3)",
+      "set = [1, 2, 3]",
+      "set = (1, 2, 3)"
+    ],
+    "correctAnswer": 0
   }
 ]

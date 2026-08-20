@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const response = await fetch(`../questions/${subject}.json`);
 
             if (!response.ok) {
-                throw new Error(`Failed to load ${subject} questions`);
+                throw new Error(`Failed to load ${subject}.json questions`);
             }
 
             questions = await response.json();

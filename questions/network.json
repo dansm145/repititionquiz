@@ -1,116 +1,236 @@
 [
   {
-    "question": "Which of the following is a function of an operating system?",
+    "question": "Which layer of the OSI model does a switch primarily operate on?",
+    "options": ["Layer 1 (Physical)", "Layer 2 (Data Link)", "Layer 3 (Network)", "Layer 4 (Transport)"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Which layer of the OSI model does a router primarily operate on?",
+    "options": ["Layer 2 (Data Link)", "Layer 3 (Network)", "Layer 4 (Transport)", "Layer 7 (Application)"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "What does the term 'IP' stand for in networking?",
+    "options": ["Internet Protocol", "Internal Port", "Interconnected Path", "Internet Provider"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Which protocol is used to automatically assign IP addresses to clients on a network?",
+    "options": ["DNS", "DHCP", "SMTP", "SNMP"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "What is the purpose of DNS?",
     "options": [
-      "Compiling source code",
-      "Managing memory allocation",
-      "Designing user interfaces",
-      "Creating databases"
+      "To encrypt network traffic",
+      "To translate domain names into IP addresses",
+      "To assign IP addresses dynamically",
+      "To block unauthorized access"
     ],
     "correctAnswer": 1
   },
   {
-    "question": "What is the primary role of a kernel in an operating system?",
+    "question": "Which port does HTTPS use by default?",
+    "options": ["80", "443", "21", "25"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Which protocol and port are used for secure remote administration of a Linux server?",
+    "options": ["Telnet, port 23", "SSH, port 22", "RDP, port 3389", "FTP, port 21"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "What is the default port for RDP (Remote Desktop Protocol)?",
+    "options": ["22", "3389", "5900", "8080"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Which IPv4 address class provides the largest number of hosts per network?",
+    "options": ["Class A", "Class B", "Class C", "Class D"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "What is the purpose of a subnet mask?",
     "options": [
-      "To provide a user interface",
-      "To manage system resources and hardware communication",
-      "To store user files",
-      "To run applications directly"
+      "To encrypt data on the network",
+      "To determine which part of an IP address is the network and which is the host",
+      "To identify the MAC address of a device",
+      "To block traffic from unknown networks"
     ],
     "correctAnswer": 1
   },
   {
-    "question": "Which file system is commonly used in Windows operating systems?",
+    "question": "What is the default subnet mask for a Class C network?",
+    "options": ["255.0.0.0", "255.255.0.0", "255.255.255.0", "255.255.255.255"],
+    "correctAnswer": 2
+  },
+  {
+    "question": "What is the primary purpose of NAT (Network Address Translation)?",
     "options": [
-      "ext4",
-      "NTFS",
-      "APFS",
-      "ZFS"
+      "To speed up internet connections",
+      "To translate private IP addresses to a public IP address for internet access",
+      "To assign MAC addresses to devices",
+      "To filter malware on the network"
     ],
     "correctAnswer": 1
   },
   {
-    "question": "What does the term 'GUI' stand for in computing?",
+    "question": "Which IPv4 address range is reserved for private networks (RFC 1918)?",
+    "options": ["11.0.0.0/8", "172.16.0.0/12", "192.169.0.0/16", "8.8.8.0/24"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "What is the primary purpose of the ARP protocol?",
     "options": [
-      "Graphical User Interface",
-      "General User Input",
-      "Global Unified Index",
-      "Graphical Utility Integration"
+      "To resolve IP addresses to MAC addresses",
+      "To resolve domain names to IP addresses",
+      "To route packets between networks",
+      "To assign IP addresses"
     ],
     "correctAnswer": 0
   },
   {
-    "question": "Which of the following is an example of an open-source operating system?",
-    "options": [
-      "Windows 10",
-      "macOS",
-      "Linux",
-      "iOS"
-    ],
+    "question": "What is the loopback IPv4 address used to test the local network stack?",
+    "options": ["192.168.0.1", "10.0.0.1", "127.0.0.1", "169.254.0.1"],
     "correctAnswer": 2
   },
   {
-    "question": "What is the purpose of a device driver in an operating system?",
+    "question": "A Windows client cannot get an IP address from the DHCP server and has an address starting with 169.254. What does this indicate?",
     "options": [
-      "To encrypt user data",
-      "To allow the OS to communicate with hardware devices",
-      "To manage network connections",
-      "To compress files"
+      "The client has a valid public IP address",
+      "The client assigned itself an APIPA (link-local) address because DHCP was unreachable",
+      "The client is connected via VPN",
+      "The client is using a reserved static address"
     ],
     "correctAnswer": 1
   },
   {
-    "question": "Which command is used to list files and directories in a Linux terminal?",
+    "question": "Which command shows the current IP configuration on a Windows machine?",
+    "options": ["ifconfig", "ipconfig", "ip addr show", "netstat"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Which command is used to test connectivity to another host by sending ICMP echo requests?",
+    "options": ["traceroute", "ping", "nslookup", "arp"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Which command shows the path packets take across the network to a destination?",
+    "options": ["ping", "tracert / traceroute", "netstat", "ipconfig /all"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Which command can flush and rebuild the DNS resolver cache on Windows?",
+    "options": ["ipconfig /flushdns", "ipconfig /release", "netstat -an", "arp -d"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Which command displays the MAC addresses of devices your computer has communicated with?",
+    "options": ["netstat -r", "arp -a", "nslookup", "ping -a"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "What does the command 'nslookup' do?",
     "options": [
-      "dir",
-      "ls",
-      "list",
-      "show"
+      "Checks open ports on a remote host",
+      "Queries DNS servers to resolve a name or IP address",
+      "Tests the physical cable connection",
+      "Shows the routing table"
     ],
     "correctAnswer": 1
   },
   {
-    "question": "What is the primary function of RAM in a computer?",
+    "question": "What is a VLAN primarily used for?",
     "options": [
-      "To store data permanently",
-      "To provide temporary storage for running applications",
-      "To manage network traffic",
-      "To cool down the CPU"
+      "Encrypting traffic between switches",
+      "Logically segmenting a physical network into separate broadcast domains",
+      "Boosting Wi-Fi signal strength",
+      "Assigning IP addresses automatically"
     ],
     "correctAnswer": 1
   },
   {
-    "question": "Which of the following is NOT a type of computer memory?",
-    "options": [
-      "RAM",
-      "ROM",
-      "CPU",
-      "Cache"
-    ],
-    "correctAnswer": 2
+    "question": "Which protocol do access points and switches commonly use to identify endpoints with 802.1X port-based authentication?",
+    "options": ["RADIUS", "SNMP", "SMTP", "TFTP"],
+    "correctAnswer": 0
   },
   {
-    "question": "What does the term 'CPU' stand for?",
+    "question": "What is the maximum speed of a standard Cat6 cable at 100 meters?",
+    "options": ["100 Mbps", "1 Gbps", "10 Gbps", "40 Gbps"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Which connector type is used with standard Ethernet network cables?",
+    "options": ["RJ11", "RJ45", "USB-C", "DB9"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Which wiring standard defines the pinout with the orange pair on pins 1 and 2?",
+    "options": ["T568A", "T568B", "RS-232", "802.3af"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "What does the PoE (Power over Ethernet) standard 802.3af provide?",
     "options": [
-      "Central Processing Unit",
-      "Computer Personal Unit",
-      "Control Processing Unit",
-      "Central Power Unit"
+      "Encryption for Ethernet frames",
+      "Electrical power to devices such as APs and IP phones over the network cable",
+      "Faster Ethernet speeds",
+      "Wireless roaming between access points"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "How many wire pairs are used in a standard Ethernet cable for 100BASE-TX?",
+    "options": ["1 pair", "2 pairs", "3 pairs", "4 pairs"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "What is the main difference between a hub and a switch?",
+    "options": [
+      "A hub forwards frames only to the destination port; a switch floods all ports",
+      "A switch forwards frames only to the destination port; a hub floods all ports",
+      "A hub works at Layer 3; a switch works at Layer 1",
+      "There is no functional difference"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "What information does a routing table contain?",
+    "options": [
+      "Usernames and passwords",
+      "Network destinations and the next hop / interface to reach them",
+      "MAC address to port mappings",
+      "DNS server statistics"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "What does TCP do that UDP does not?",
+    "options": [
+      "Sends datagrams as fast as possible",
+      "Guarantees ordered, reliable delivery with acknowledgements and retransmission",
+      "Requires no port numbers",
+      "Works only on Wi-Fi networks"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Which transport protocol would a live video stream typically prefer?",
+    "options": ["TCP", "UDP", "ICMP", "ARP"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "What is a three-way handshake used for?",
+    "options": [
+      "Establishing a TCP connection between client and server",
+      "Encrypting HTTP traffic",
+      "Reserving a DHCP address",
+      "Authenticating Wi-Fi clients"
     ],
     "correctAnswer": 0
   },
   {
-    "question": "Which operating system is developed by Apple Inc.?",
-    "options": [
-      "Windows",
-      "Linux",
-      "macOS",
-      "Android"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "question": "What is the purpose of a firewall in a computer network?",
+    "question": "What is the purpose of a firewall in a network?",
     "options": [
       "To speed up internet connections",
       "To block unauthorized access and protect against threats",
@@ -120,372 +240,232 @@
     "correctAnswer": 1
   },
   {
-    "question": "Which protocol is used to send emails over the internet?",
+    "question": "What does a VPN primarily provide for a remote worker?",
     "options": [
-      "HTTP",
-      "FTP",
-      "SMTP",
-      "TCP"
+      "A faster internet connection",
+      "An encrypted tunnel into the company network over the internet",
+      "Automatic printer installation",
+      "Free public Wi-Fi access"
     ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Which Wi-Fi security standard is considered insecure and should not be used today?",
+    "options": ["WPA3", "WPA2-AES", "WEP", "802.1X"],
     "correctAnswer": 2
   },
   {
-    "question": "What does the term 'URL' stand for?",
+    "question": "What are the two main frequency bands used by Wi-Fi networks?",
+    "options": ["900 MHz and 1.8 GHz", "2.4 GHz and 5 GHz", "5 GHz and 60 GHz", "10 GHz and 20 GHz"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Which Wi-Fi band generally offers better throughput but shorter range?",
+    "options": ["2.4 GHz", "5 GHz", "Both are identical", "Neither, it depends only on the channel width"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "What can happen when too many access points use overlapping channels in the same area?",
     "options": [
-      "Uniform Resource Locator",
-      "Universal Reading Language",
-      "United Remote Link",
-      "Uniform Resource Link"
+      "Co-channel interference that degrades Wi-Fi performance",
+      "A broadcast storm that crashes the switches",
+      "Clients connect with a higher speed",
+      "Nothing, channels never interfere"
     ],
     "correctAnswer": 0
   },
   {
-    "question": "Which of the following is a type of network topology?",
+    "question": "What tool can help identify overlapping Wi-Fi channels and signal strength in an area?",
+    "options": ["Packet sniffer only", "Wi-Fi analyzer / site survey tool", "Cable tester", "Toner probe"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Which setting should be checked first when a user cannot reach any internal server but can ping their default gateway?",
     "options": [
-      "Round",
-      "Star",
-      "Circle",
-      "Square"
+      "The monitor's resolution",
+      "The client's DNS settings and gateway configuration",
+      "The printer drivers",
+      "The browser's zoom level"
     ],
     "correctAnswer": 1
   },
   {
-    "question": "What is the purpose of a router in a network?",
+    "question": "A user can ping 8.8.8.8 but cannot open websites by name. What is the most likely cause?",
     "options": [
-      "To store data",
-      "To forward data packets between networks",
-      "To encrypt files",
-      "To manage user accounts"
+      "A faulty network cable",
+      "A DNS resolution problem",
+      "An incorrect subnet mask",
+      "The firewall blocking ICMP"
     ],
     "correctAnswer": 1
   },
   {
-    "question": "Which of the following is a valid IPv4 address?",
+    "question": "What is the first thing to check in the OSI model when a machine has no network connection at all?",
     "options": [
-      "192.168.1.256",
-      "192.168.1.1",
-      "256.168.1.1",
-      "192.168.1"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "question": "What does the term 'LAN' stand for?",
-    "options": [
-      "Local Area Network",
-      "Long Access Node",
-      "Link Area Network",
-      "Local Access Node"
+      "The physical layer: cable, port, and link lights",
+      "The application layer settings",
+      "The DNS server version",
+      "The browser cache"
     ],
     "correctAnswer": 0
   },
   {
-    "question": "Which protocol is used to transfer files over the internet?",
-    "options": [
-      "HTTP",
-      "FTP",
-      "SMTP",
-      "DNS"
-    ],
-    "correctAnswer": 1
+    "question": "Which tool is used to verify that a network cable is wired correctly?",
+    "options": ["Cable tester", "Toner and probe", "Wi-Fi analyzer", "Protocol analyzer"],
+    "correctAnswer": 0
   },
   {
-    "question": "What is the primary function of a switch in a network?",
-    "options": [
-      "To connect multiple networks",
-      "To forward data to the correct device within a network",
-      "To store data packets",
-      "To encrypt data"
-    ],
-    "correctAnswer": 1
+    "question": "Which tool helps locate a specific cable among many in a patch panel?",
+    "options": ["Toner and probe", "Crimper", "Punch-down tool", "Multimeter"],
+    "correctAnswer": 0
   },
   {
-    "question": "Which of the following is a type of malware?",
+    "question": "What does the protocol SNMP allow an IT supporter to do?",
     "options": [
-      "Cookie",
-      "Virus",
-      "Cache",
-      "Pixel"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "question": "What does the term 'VPN' stand for?",
-    "options": [
-      "Virtual Private Network",
-      "Very Personal Node",
-      "Virtual Public Network",
-      "Visual Private Node"
+      "Remotely monitor and manage network devices",
+      "Remotely wipe user hard drives",
+      "Encrypt all network traffic",
+      "Assign IP addresses to clients"
     ],
     "correctAnswer": 0
   },
   {
-    "question": "Which of the following is a type of encryption?",
+    "question": "What is the difference between a port and a socket?",
     "options": [
-      "AES",
-      "HTTP",
-      "FTP",
-      "DNS"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "question": "What is the purpose of a proxy server?",
-    "options": [
-      "To store user files",
-      "To act as an intermediary between a user and the internet",
-      "To manage hardware resources",
-      "To compile code"
+      "A port is physical; a socket is logical only",
+      "A socket combines an IP address and a port number to identify an endpoint/connection",
+      "They are two names for the same thing",
+      "A socket is always UDP-based"
     ],
     "correctAnswer": 1
   },
   {
-    "question": "Which of the following is a programming language?",
+    "question": "What does a proxy server primarily do?",
     "options": [
-      "HTML",
-      "CSS",
-      "Python",
-      "XML"
+      "Store user files",
+      "Act as an intermediary between a user and the internet",
+      "Manage hardware resources",
+      "Compile code"
     ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "What is the main purpose of a DMZ in a corporate network?",
+    "options": [
+      "To host public-facing services separated from the internal network",
+      "To store encrypted backups",
+      "To give guests free internet",
+      "To monitor keyboard input"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Which IPv6 feature replaces ARP from IPv4?",
+    "options": ["DHCPv6 only", "NDP (Neighbor Discovery Protocol)", "DNSSEC", "SLAAC"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "How many bits are in an IPv6 address?",
+    "options": ["32", "64", "128", "256"],
     "correctAnswer": 2
   },
   {
-    "question": "What does the term 'HTML' stand for?",
+    "question": "What does QoS (Quality of Service) allow you to do on a network?",
     "options": [
-      "Hyper Text Markup Language",
-      "High Transfer Module Language",
-      "Hyper Transfer Markup Language",
-      "High Text Module Language"
+      "Prioritize latency-sensitive traffic such as voice and video",
+      "Encrypt all packets",
+      "Assign static IP addresses",
+      "Compress file transfers"
     ],
     "correctAnswer": 0
   },
   {
-    "question": "Which of the following is a database management system?",
+    "question": "What is port forwarding used for?",
     "options": [
-      "Apache",
-      "MySQL",
-      "Nginx",
-      "Node.js"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "question": "What is the primary function of a compiler?",
-    "options": [
-      "To execute machine code",
-      "To translate source code into machine code",
-      "To debug programs",
-      "To manage memory"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "question": "Which of the following is an example of a web browser?",
-    "options": [
-      "Notepad",
-      "Chrome",
-      "Excel",
-      "PowerPoint"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "question": "What does the term 'CSS' stand for?",
-    "options": [
-      "Computer Style Sheet",
-      "Cascading Style Sheets",
-      "Creative Style System",
-      "Computer Style System"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "question": "Which of the following is a type of software license?",
-    "options": [
-      "HTTP",
-      "GPL",
-      "FTP",
-      "SMTP"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "question": "What is the purpose of an antivirus program?",
-    "options": [
-      "To speed up the computer",
-      "To detect and remove malware",
-      "To manage network connections",
-      "To store user files"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "question": "Which of the following is a cloud storage service?",
-    "options": [
-      "Dropbox",
-      "Notepad",
-      "Excel",
-      "PowerPoint"
+      "Allowing external traffic to reach a specific service on a private internal host",
+      "Speeding up the internal switch",
+      "Blocking all incoming connections",
+      "Renewing DHCP leases"
     ],
     "correctAnswer": 0
   },
   {
-    "question": "What does the term 'API' stand for?",
+    "question": "What is a common symptom of a duplicate IP address on the network?",
     "options": [
-      "Application Programming Interface",
-      "Advanced Programming Interface",
-      "Application Protocol Interface",
-      "Advanced Protocol Interface"
+      "Intermittent connectivity loss on the affected machines",
+      "Faster file transfers",
+      "A louder fan on the switch",
+      "Automatically stronger Wi-Fi signal"
     ],
     "correctAnswer": 0
   },
   {
-    "question": "Which of the following is a type of computer port?",
-    "options": [
-      "HTTP",
-      "USB",
-      "FTP",
-      "SMTP"
-    ],
+    "question": "Which record type in DNS maps a domain name to an IPv4 address?",
+    "options": ["MX record", "A record", "CNAME record", "PTR record"],
     "correctAnswer": 1
   },
   {
-    "question": "What is the primary function of a motherboard in a computer?",
-    "options": [
-      "To store data permanently",
-      "To connect and allow communication between hardware components",
-      "To cool down the CPU",
-      "To manage network traffic"
-    ],
+    "question": "Which DNS record type identifies the mail server for a domain?",
+    "options": ["A", "MX", "TXT", "NS"],
     "correctAnswer": 1
   },
   {
-    "question": "Which of the following is a type of computer monitor?",
+    "question": "What does the TTL value in a DNS record specify?",
     "options": [
-      "LCD",
-      "USB",
-      "HTTP",
-      "FTP"
+      "How long the record may be cached by resolvers",
+      "The total lifetime of the domain",
+      "The number of mail servers",
+      "The encryption strength of DNS"
     ],
     "correctAnswer": 0
   },
   {
-    "question": "What does the term 'BIOS' stand for?",
+    "question": "Which authentication protocol is commonly used for Wi-Fi in enterprise environments with usernames and passwords?",
+    "options": ["WPA3-Personal (PSK)", "802.1X with RADIUS", "MAC filtering only", "Captive portal only"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Which port does unencrypted HTTP use by default?",
+    "options": ["21", "25", "80", "110"],
+    "correctAnswer": 2
+  },
+  {
+    "question": "Which ports are used for secure IMAP and POP3 email retrieval?",
+    "options": ["25 and 587", "110 and 143", "993 and 995", "80 and 443"],
+    "correctAnswer": 2
+  },
+  {
+    "question": "What is the purpose of a network access control (NAC) system?",
     "options": [
-      "Basic Input Output System",
-      "Binary Input Output System",
-      "Basic Interface Operating System",
-      "Binary Interface Operating System"
+      "To check device compliance and control network access before granting it",
+      "To increase switch port speed",
+      "To create VLANs automatically at Layer 1",
+      "To replace DHCP servers"
     ],
     "correctAnswer": 0
   },
   {
-    "question": "Which of the following is a type of printer?",
-    "options": [
-      "LCD",
-      "Inkjet",
-      "USB",
-      "HTTP"
-    ],
-    "correctAnswer": 1
+    "question": "Which command shows active TCP connections and listening ports on a Windows machine?",
+    "options": ["netstat -an", "ipconfig /all", "arp -a", "route print"],
+    "correctAnswer": 0
   },
   {
-    "question": "What is the purpose of a GPU in a computer?",
+    "question": "What does 'link aggregation' (LACP) allow you to do?",
     "options": [
-      "To manage memory allocation",
-      "To render graphics and images",
-      "To store user files",
-      "To manage network connections"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "question": "Which of the following is a type of keyboard layout?",
-    "options": [
-      "QWERTY",
-      "USB",
-      "HTTP",
-      "FTP"
+      "Combine multiple physical links into one logical link for higher throughput and redundancy",
+      "Connect two different VLANs without a router",
+      "Automatically assign IP addresses to switches",
+      "Boost Wi-Fi coverage"
     ],
     "correctAnswer": 0
   },
   {
-    "question": "What does the term 'SSD' stand for?",
+    "question": "In troubleshooting, what does documenting the resolution step provide?",
     "options": [
-      "Solid State Drive",
-      "Super Speed Drive",
-      "Secure State Drive",
-      "Solid Speed Drive"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "question": "Which of the following is a type of operating system for mobile devices?",
-    "options": [
-      "Windows",
-      "Android",
-      "Linux",
-      "macOS"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "question": "What is the purpose of a UPS in a computer setup?",
-    "options": [
-      "To speed up the computer",
-      "To provide backup power during outages",
-      "To manage network connections",
-      "To store user files"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "question": "Which of the following is a type of computer mouse?",
-    "options": [
-      "LCD",
-      "Optical",
-      "USB",
-      "HTTP"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "question": "What does the term 'HDD' stand for?",
-    "options": [
-      "Hard Disk Drive",
-      "High Density Drive",
-      "Hard Data Drive",
-      "High Disk Drive"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "question": "Which of the following is a type of network cable?",
-    "options": [
-      "USB",
-      "Ethernet",
-      "HTTP",
-      "FTP"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "question": "What is the purpose of a sound card in a computer?",
-    "options": [
-      "To manage memory allocation",
-      "To process and output audio",
-      "To store user files",
-      "To manage network connections"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "question": "Which of the following is a type of computer processor manufacturer?",
-    "options": [
-      "Intel",
-      "USB",
-      "HTTP",
-      "FTP"
+      "A record that helps solve similar issues faster in the future",
+      "A slower ticketing system",
+      "A way to hide the problem from the user",
+      "Nothing, documentation is optional"
     ],
     "correctAnswer": 0
   }
